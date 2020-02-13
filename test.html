@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<script>
+	$.ajax({
+		url: "https://client-api.facebyte.io/api/v1/api_token/",
+		type: "GET",
+		beforeSend: function(xhr) {
+			xhr.setRequestHeader('x-api-key', '9d867b50bd1cfce0f36c3b8a2b793bec7a27895a');
+			xhr.setRequestHeader('x-api-secret', 'b6141a31ee171c356de3c943b9b34682b61d3edb');
+		},
+		success: function(result) {
+			console.log(result);
+		},
+		error: function(error) {
+			console.log(error);
+		}
+	});
+	</script>
+</body>
+</html>
