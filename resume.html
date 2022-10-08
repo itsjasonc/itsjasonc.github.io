@@ -9,16 +9,18 @@
 		<link href="css/common.css" rel="stylesheet" type="text/css" />
 		<style>
 		.site-wrap * {
-			text-align: left !important;
+			text-align: left;
+			color: #5a5a5a;
 		}
 		
 		.header {
-			border-top: 1px solid black;
-			border-bottom: 1px solid black;
+			color: black;
+			font-family: Georgia, 'Times New Roman', Times, serif;
 			padding: 5px 5px 5px 10px;
 			margin-bottom: 10px;
 			width: 100%;
 			text-transform: uppercase;
+			font-size: 19px;
 		}
 		
 		legend {
@@ -58,6 +60,49 @@
 			width: 100%;
 			text-align: center;
 		}
+
+		legend > * {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			text-align: center!important;
+			color: #5a5a5a;
+		}
+
+		legend > h1 {
+			margin-bottom: 0;
+			font-size: 37px;
+			font-stretch: condensed;
+			font-weight: normal;
+		}
+
+		legend > h1 > b{
+			color: black;
+		}
+
+		legend p {
+			margin: 0;
+		}
+
+		.green, p.green > a, ul, ul li {
+			color: #6DB787!important;
+		}
+
+		hr {
+			margin-bottom: 10px;
+		}
+
+		table {
+			border-left: #bababa 3px dotted;
+			padding-left: 20px;
+		}
+
+		table p {
+			margin-top: 5px;
+		}
+
+		table * {
+			color: #bababa;
+		}
+		
 		</style>
 	</head>
 	<body>
@@ -74,80 +119,98 @@
 			<div class="box">
 				<a href="data/resume.pdf">Download resumé</a>
 			</div>
-			<legend>Jason Chung<br>Surrey, BC. Canada<br>778-245-3105<br><a href="mailto:jason@choy.io">jason@choy.io</a></legend>
-			<div class="header">SUMMARY</div>
-			<div class="content"><div>More than 4 years of programming and application development experience.</div></div>
-			<div class="header">COMPUTER SKILLS</div>
+			<legend>
+				<h1>JASON <b>CHUNG</b></h1>
+				<p>
+					Victoria, British Columbia
+				</p>
+				<p class="green">
+					<a href="mailto:jason@choy.io">jason@choy.io</a> · <a href="https://choy.io">https://choy.io</a>
+				</p>
+			</legend>
+			<hr>
+			<div class="content"><div>More than 5 years of experience covering software development, architecture, management, continuous integration and continuous delivery, devops, front end, back end. </div></div>
+			<div class="header">SKILLS</div>
 			<div class="content">
-				<b>Languages</b>
 				<ul>
-					<li>Proficient in C++, C#, Java, PHP, JavaScript, HTML, CSS, Python, Objective-C</li>
-				</ul>
-				<b>Other</b>
-				<ul>
-					<li>Databases: MySQL, SQLite, PostgreSQL, MongoDB, Redis, Cassandra, MariaDB</li>
-					<li>Platforms: Windows, Linux, OSX, Android, iOS</li>
-					<li>Games Development: Unity, Entity Component Systems, Game AI, Game Engine Architecture</li>
+					<li><span>C++, C, C#, Objective-C, Java, JavaScript, PHP, Python, HTML, CSS, Bash, Shell</span></li>
+					<li><span>MySQL, SQLite, PostgreSQL, MongoDB, Redis, CassandraDB, MariaDB, CouchDB</span></li>
+					<li><span>Unity, Entity Component Systems, Game AI, Game Engine Architecture</span></li>
 				</ul>
 			</div>
 			<div class="header">EXPERIENCE</div>
 			<div class="content">
-				<div style="width: 100%;">
-					<b>Software Developer</b>
-					<font class="date">07/2014 - 12/2015</font>
-				</div>
-				<i>Main Development Ltd</i>
-				<ul>
-					<li>Primary responsibilities included the design, documentation, testing, and development of server sided, middleware, and client sided applications.</li>
-					<li>Developed facial detection and recognition applications integrated with domestic and international watchlists for the ingress kiosks during the Baku First European Olympic Games</li>
-					<li>Integrated location tracking solutions to seamlessly track subjects in real-time</li>
-					<li>Installation and configuration of video management software, Dell switches and servers, IP cameras, RFID Antennas, fiber optic networks</li>
-				</ul>
-				<div style="width: 100%;">
-					<b>Software Developer</b>
-					<font class="date">12/2015 - 01/2018</font>
-				</div>
-				<i>Prilyx Research & Development Ltd</i>
-				<ul>
-					<li>Managed a team of software developers</li>
-					<li>Designed, tested, documentation, and development of proprietary technologies:</li>
-					<ul>
-						<li>Facial recognition mobile application</li>
-						<li>Cloud based live video facial recognition web application</li>
-						<li>Cloud based location tracking and video stitching application</li>
-						<li>Live video conference face detection, recognition, and emotion identification applications</li>
-						<li>Access Control system using fingerprint, iris, face, FOB/RFID</li>
-						<li>Biometric clock-in/clock-out applications</li>
-					</ul>
-				</ul>
-				<div style="width: 100%;">
-					<b>Software Developer (Contract Based / Remote)</b>
-					<font class="date">07/2014 - 01/2020</font>
-				</div>
-				<i>Kwantlen Polytechnic University</i>
-				<ul>
-					<li>Designed, tested, documented, and developed Android and iOS applications:</li>
-					<ul>
-						<li>KPU Plant Database (server, API, Android and iOS apps)</li>
-						<li>Foodee real-time driver tracking and communication (servers, API, Android and iOS apps)</li>
-					</ul>
-				</ul>
+				<table>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>
+								<b>
+									<span>MARCH 2022 - PRESENT</span><br>
+									<span class="green">INTERMEDIATE STACK DEVELOPER, </span><span>BC PUBLIC SERVICE</span>
+								</b><br>
+								<p>Tech lead responsible for product ownership transfer. Agile development and maintenance of
+	OpenShift containers, and GitHub repository. Developed features and enhancements of product
+	used by multiple ministries within government. Coordinated with partners to design and develop
+	ministry specific features.</p>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<b>
+									<span>DECEMBER 2015 - JANUARY 2019</span><br>
+									<span class="green">SOFTWARE DEVELOPER, </span><span>PRILYX RESEARCH & DEVELOPMENT LTD.</span>
+								</b><br>
+								<p>Designed, tested, documentation, and development of proprietary technologies revolving around
+									real-time facial detection and recognition, emotion identification, biometric access control.
+									Management of junior developers.</p>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<b>
+									<span>JULY 2014 - DECEMBER 2015</span><br>
+									<span class="green">SOFTWARE DEVELOPER, </span><span>MAIN DEVELOPMENT LTD.</span>
+								</b><br>
+								<p>Designed, tested, documentation, and development of proprietary server sided, middleware, and
+									client sided applications. Developed facial detection and recognition applications integrated with
+									domestic and international watchlists for the ingress kiosks during the Baku First European
+									Olympic Games. Integrated location tracking solutions to seamlessly track subjects in real-time
+									within venues. Installation and configuration of video management software, Dell switches and
+									servers, IP cameras, RFID antennas, fiber optic networks.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<div class="header">EDUCATION</div>
 			<div class="content">
-				<div style="width: 100%;">
-					<b>British Columbia Institute of Techology</b>
-				</div>
-				<i>Burnaby, BC</i>
-				<div>09/2018 - 07/2020</div>
-				<div>Computer Systems Technology Bachelor, Games Development Option</div>
-				<div style="width: 100%;">
-					<b>British Columbia Institute of Techology</b>
-				</div>
-				<i>Burnaby, BC</i>
-				<div>09/2011 - 07/2014</div>
-				<div>Computer Systems Technology Diploma, Digital Processing Option</div>
-			</div>
+				<table>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>
+								<b>
+									<span>APRIL 2018</span><br>
+									<span class="green">BACHELOR OF TECHNOLOGY, </span><span>BCIT</span>
+								</b><br>
+								<p>Academics focused on games development</p>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<b>
+									<span>APRIL 2014</span><br>
+									<span class="green">COMPUTER SYSTEMS TECHNOLOGY, </span><span>BCIT</span>
+								</b><br>
+								<p>Academics focused on digital audio signal and video processing</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 		</div>
 	</body>
 </html>
